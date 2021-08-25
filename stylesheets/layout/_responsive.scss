@@ -1,0 +1,66 @@
+@media screen and (min-width: 800px) {
+	body {
+		background-image: url(../../images/bg-intro-desktop.png);
+		display: flex;
+		align-items: center;
+	}
+
+	div.container {
+		min-height: auto;
+		width: 95%;
+		grid-template-rows: min-content;
+		grid-template-columns: auto auto;
+		align-items: center;
+		padding: 0;
+
+		section.text-container {
+			h1 {
+				margin: 0;
+				margin-bottom: 25px;
+				text-align: left;
+				font-size: 2.25rem;
+				font-weight: 700;
+				width: 100%;
+			}
+			p {
+				margin: 0;
+				text-align: left;
+			}
+		}
+
+		main {
+			div.action-caller {
+				padding: 15px;
+				p {
+					width: 100%;
+					max-width: max-content;
+				}
+			}
+			div.form-container {
+				form {
+					div.input {
+						span.show-error-icon {
+							top: 6px;
+						}
+						span.show-error-message {
+							top: 60px;
+						}
+
+						input {
+							padding: 16px;
+							font-size: 1rem;
+						}
+					}
+
+					input[type="submit"] {
+						padding: 15px;
+					}
+				}
+
+				div.agreement {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

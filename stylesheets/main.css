@@ -106,7 +106,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 html::-webkit-scrollbar-thumb:active {
-  background: #ff7a7a;
+  background: #38299e;
 }
 
 body {
@@ -116,7 +116,7 @@ body {
 
 div.container {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1200px;
   min-height: 95vh;
   margin: 0 auto;
   padding: 30px 0;
@@ -131,9 +131,9 @@ div.container {
 }
 
 div.container section.text-container h1 {
-  margin: 0 auto 25px;
+  margin: 0 auto 15px;
   text-align: center;
-  color: #fbf3f3;
+  color: white;
   font-size: 1.8rem;
   font-weight: 700;
   width: 70%;
@@ -147,15 +147,15 @@ div.container section.text-container p {
   font-size: 1.18rem;
   font-weight: 300;
   max-width: 470px;
-  color: #fbf3f3;
+  color: white;
 }
 
 div.container main div.action-caller {
   text-align: center;
   line-height: 1.6;
-  color: #fbf3f3;
+  color: rgba(255, 255, 255, 0.84);
   font-weight: 300;
-  padding: 10px 50px;
+  padding: 5px;
   background-color: #6751f5;
   border-radius: 8px;
   margin-bottom: 25px;
@@ -171,6 +171,8 @@ div.container main div.action-caller p {
 
 div.container main div.action-caller p span {
   font-weight: 700;
+  color: white;
+  font-size: 1.1rem;
 }
 
 div.container main div.form-container {
@@ -182,13 +184,30 @@ div.container main div.form-container {
 }
 
 div.container main div.form-container form div.input {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+div.container main div.form-container form div.input span.show-error-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  background: url(../../images/icon-error.svg) no-repeat center;
+}
+
+div.container main div.form-container form div.input span.show-error-message {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  color: rgba(255, 0, 0, 0.883);
+  font-size: 0.8rem;
 }
 
 div.container main div.form-container form div.input input {
-  padding: 10px;
+  padding: 12px;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
@@ -200,12 +219,94 @@ div.container main div.form-container form input[type="submit"] {
   padding: 10px;
   width: 100%;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 2px;
   font-family: "Poppins", sans-serif;
-  color: #fbf3f3;
+  color: white;
   background-color: #38cc8c;
   border-radius: 5px;
-  border: 1px solid rgba(128, 128, 128, 0.281);
+  border: 1px solid rgba(46, 29, 29, 0.281);
   -webkit-box-shadow: 0 3px rgba(76, 79, 82, 0.45);
           box-shadow: 0 3px rgba(76, 79, 82, 0.45);
+}
+
+div.container main div.form-container form input[type="submit"]:hover {
+  background-color: rgba(56, 204, 140, 0.6);
+  cursor: pointer;
+}
+
+div.container main div.form-container div.agreement {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: #b9b6d3;
+  text-align: center;
+  opacity: 0.7;
+}
+
+div.container main div.form-container div.agreement a {
+  color: rgba(255, 0, 0, 0.883);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url(../../images/bg-intro-desktop.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.container {
+    min-height: auto;
+    width: 95%;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  div.container section.text-container h1 {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 2.25rem;
+    font-weight: 700;
+    width: 100%;
+  }
+  div.container section.text-container p {
+    margin: 0;
+    text-align: left;
+  }
+  div.container main div.action-caller {
+    padding: 15px;
+  }
+  div.container main div.action-caller p {
+    width: 100%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  div.container main div.form-container form div.input span.show-error-icon {
+    top: 6px;
+  }
+  div.container main div.form-container form div.input span.show-error-message {
+    top: 60px;
+  }
+  div.container main div.form-container form div.input input {
+    padding: 16px;
+    font-size: 1rem;
+  }
+  div.container main div.form-container form input[type="submit"] {
+    padding: 15px;
+  }
+  div.container main div.form-container div.agreement {
+    width: 100%;
+  }
 }
