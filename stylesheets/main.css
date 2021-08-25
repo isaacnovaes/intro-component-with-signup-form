@@ -3,6 +3,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.15;
+  font-family: "Poppins", sans-serif;
   -webkit-text-size-adjust: 100%;
   /* Set core root defaults */
 }
@@ -106,4 +107,105 @@ html::-webkit-scrollbar-thumb:hover {
 
 html::-webkit-scrollbar-thumb:active {
   background: #ff7a7a;
+}
+
+body {
+  background: #ff7a7a url(../../images/bg-intro-mobile.png) center;
+  background-size: contain;
+}
+
+div.container {
+  width: 90%;
+  max-width: 1400px;
+  min-height: 95vh;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content auto;
+      grid-template-rows: -webkit-min-content auto;
+      grid-template-rows: min-content auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 20px;
+}
+
+div.container section.text-container h1 {
+  margin: 0 auto 25px;
+  text-align: center;
+  color: #fbf3f3;
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 70%;
+  max-width: 300px;
+}
+
+div.container section.text-container p {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.18rem;
+  font-weight: 300;
+  max-width: 470px;
+  color: #fbf3f3;
+}
+
+div.container main div.action-caller {
+  text-align: center;
+  line-height: 1.6;
+  color: #fbf3f3;
+  font-weight: 300;
+  padding: 10px 50px;
+  background-color: #6751f5;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 6px rgba(76, 79, 82, 0.2);
+          box-shadow: 0 6px rgba(76, 79, 82, 0.2);
+}
+
+div.container main div.action-caller p {
+  width: 70%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+div.container main div.action-caller p span {
+  font-weight: 700;
+}
+
+div.container main div.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 7px rgba(76, 79, 82, 0.2);
+          box-shadow: 0 7px rgba(76, 79, 82, 0.2);
+}
+
+div.container main div.form-container form div.input {
+  margin-bottom: 20px;
+}
+
+div.container main div.form-container form div.input input {
+  padding: 10px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+div.container main div.form-container form input[type="submit"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #fbf3f3;
+  background-color: #38cc8c;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  -webkit-box-shadow: 0 3px rgba(76, 79, 82, 0.45);
+          box-shadow: 0 3px rgba(76, 79, 82, 0.45);
 }

@@ -1,3 +1,97 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+body {
+	background: $red url(../../images/bg-intro-mobile.png) center;
+	background-size: contain;
+}
+div.container {
+	width: 90%;
+	max-width: 1400px;
+	min-height: 95vh;
+	margin: 0 auto;
+	padding: 30px 0;
+	display: grid;
+	grid-template-rows: min-content auto;
+	grid-template-columns: auto;
+	row-gap: 20px;
+
+	section.text-container {
+		// outline: 1px solid red;
+		h1 {
+			margin: 0 auto 25px;
+			text-align: center;
+			color: $white;
+			font-size: 1.8rem;
+			font-weight: 700;
+			width: 70%; //Change this for desktop
+			max-width: 300px; //Change this for desktop
+		}
+		p {
+			margin: 0 auto;
+			text-align: center;
+			line-height: 1.6;
+			font-size: 1.18rem;
+			font-weight: 300;
+			max-width: 470px; //Change this for desktop
+			color: $white;
+		}
+	}
+
+	main {
+		// outline: 1px solid black;
+		div.action-caller {
+			text-align: center;
+			line-height: 1.6;
+			color: $white;
+			font-weight: 300;
+			padding: 10px 50px;
+			background-color: $blue;
+			border-radius: 8px;
+			margin-bottom: 25px;
+			box-shadow: 0 6px rgba(76, 79, 82, 0.2);
+			p {
+				width: 70%; //Change this for desktop
+				max-width: 200px; //Change this for desktop
+				margin: 0 auto;
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+
+		div.form-container {
+			background-color: rgb(255, 255, 255);
+			padding: 20px;
+			border-radius: 8px;
+            box-shadow: 0 7px rgba(76, 79, 82, 0.2);
+
+			form {
+				div.input {
+					margin-bottom: 20px;
+
+					input {
+						padding: 10px;
+						width: 100%;
+						font-size: 0.8rem;
+						font-weight: 600;
+						font-family: $font-family;
+						border-radius: 5px;
+						border: 1px solid rgba(128, 128, 128, 0.281);
+					}
+				}
+
+				input[type="submit"] {
+                    margin-bottom: 15px;
+					padding: 10px;
+					width: 100%;
+					font-size: 0.9rem;
+					font-weight: 400;
+					font-family: $font-family;
+                    color: $white;
+                    background-color: $green;
+					border-radius: 5px;
+					border: 1px solid rgba(128, 128, 128, 0.281);
+                    box-shadow: 0 3px rgba(76, 79, 82, 0.45);
+				}
+			}
+		}
+	}
+}

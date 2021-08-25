@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
 	line-height: 1.15;
+	font-family: $font-family;
 	-webkit-text-size-adjust: 100%; //Prevent adjustments of font size after orientation changes in iOS.
 
 	/* Set core root defaults */
