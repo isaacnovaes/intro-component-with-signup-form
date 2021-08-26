@@ -62,8 +62,19 @@ div.container {
 			padding: 20px;
 			border-radius: 8px;
 			box-shadow: 0 7px rgba(76, 79, 82, 0.2);
-
+			height: 490px;
+			transition: 0.5s linear;
 			form {
+				overflow-x: hidden;
+
+				div.animate {
+					animation: animate 0.8s ease-in forwards;
+					@keyframes animate {
+						to {
+							transform: translateX(700px);
+						}
+					}
+				}
 				div.input {
 					margin-bottom: 35px;
 					position: relative;
@@ -78,9 +89,10 @@ div.container {
 					span.show-error-message {
 						position: absolute;
 						right: 0;
-						top: 45px;
+						top: 55px;
 						color: $red-error;
 						font-size: 0.8rem;
+						visibility: hidden;
 					}
 
 					input {
@@ -90,7 +102,8 @@ div.container {
 						font-weight: 600;
 						font-family: $font-family;
 						border-radius: 5px;
-						border: 1px solid rgba(128, 128, 128, 0.281);
+						border: 2px solid rgba(128, 128, 128, 0.281);
+						transition: 0.5s;
 					}
 				}
 

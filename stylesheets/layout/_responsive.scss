@@ -37,13 +37,14 @@
 				}
 			}
 			div.form-container {
+				height: 500px;
 				form {
 					div.input {
 						span.show-error-icon {
 							top: 6px;
 						}
 						span.show-error-message {
-							top: 60px;
+							top: 65px;
 						}
 
 						input {

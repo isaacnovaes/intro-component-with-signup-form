@@ -181,6 +181,32 @@ div.container main div.form-container {
   border-radius: 8px;
   -webkit-box-shadow: 0 7px rgba(76, 79, 82, 0.2);
           box-shadow: 0 7px rgba(76, 79, 82, 0.2);
+  height: 490px;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+div.container main div.form-container form {
+  overflow-x: hidden;
+}
+
+div.container main div.form-container form div.animate {
+  -webkit-animation: animate 0.8s ease-in forwards;
+          animation: animate 0.8s ease-in forwards;
+}
+
+@-webkit-keyframes animate {
+  to {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
+}
+
+@keyframes animate {
+  to {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
 }
 
 div.container main div.form-container form div.input {
@@ -199,9 +225,10 @@ div.container main div.form-container form div.input span.show-error-icon {
 div.container main div.form-container form div.input span.show-error-message {
   position: absolute;
   right: 0;
-  top: 45px;
+  top: 55px;
   color: rgba(255, 0, 0, 0.883);
   font-size: 0.8rem;
+  visibility: hidden;
 }
 
 div.container main div.form-container form div.input input {
@@ -211,7 +238,9 @@ div.container main div.form-container form div.input input {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
-  border: 1px solid rgba(128, 128, 128, 0.281);
+  border: 2px solid rgba(128, 128, 128, 0.281);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 div.container main div.form-container form input[type="submit"] {
@@ -293,11 +322,14 @@ div.container main div.form-container div.agreement a {
     max-width: -moz-max-content;
     max-width: max-content;
   }
+  div.container main div.form-container {
+    height: 500px;
+  }
   div.container main div.form-container form div.input span.show-error-icon {
     top: 6px;
   }
   div.container main div.form-container form div.input span.show-error-message {
-    top: 60px;
+    top: 65px;
   }
   div.container main div.form-container form div.input input {
     padding: 16px;
