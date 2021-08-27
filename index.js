@@ -1,11 +1,12 @@
 const form = document.querySelector("form"),
-	formContainer = document.querySelector("div.form-container");
-let correctInputs = true;
+	formContainer = document.querySelector("div.form-container"),
+	correctInputs = [];
 
 form.addEventListener("submit", validateForm);
 
 function validateForm(event) {
 	event.preventDefault();
+
 	const firstName = document.getElementById("firstName"),
 		lastName = document.getElementById("lastName"),
 		email = document.getElementById("email"),
@@ -16,27 +17,32 @@ function validateForm(event) {
 	validateEmail(email);
 	validatePassword(password);
 
-	if (correctInputs) {
+	if (
+		correctInputs.every((item) => {
+			return item === true;
+		})
+	) {
 		showResultSubmission(formContainer);
 	}
+	correctInputs.length = 0;
 }
 
 function showError(element) {
-	element.nextElementSibling.className = "show-error-icon";
+
+	element.nextElementSibling.style.backgroundImage = "url(images/icon-error.svg)";
 	element.nextElementSibling.nextElementSibling.style.visibility = "visible";
 	element.style.border = "2px solid rgba(255, 0, 0, 0.883)";
-	correctInputs = false;
+	correctInputs.push(false);
 }
 function showCorrect(element) {
-	element.nextElementSibling.className = "show-error-icon";
 	element.nextElementSibling.style.backgroundImage = "url(images/checked-icon.svg)";
 	element.nextElementSibling.nextElementSibling.style.visibility = "hidden";
 	element.style.border = "2px solid hsl(154, 59%, 51%)";
-	correctInputs = true;
+	correctInputs.push(true);
 }
 
 function showSubmission(element) {
-	element.innerHTML = "Your data has been submitted";
+	element.innerHTML = "Your free trial is about to come!";
 	element.style.color = "hsl(154, 59%, 51%)";
 	element.style.textAlign = "center";
 	element.style.height = "60px";

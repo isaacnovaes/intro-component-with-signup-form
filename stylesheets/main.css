@@ -219,7 +219,7 @@ div.container main div.form-container form div.input span.show-error-icon {
   height: 40px;
   position: absolute;
   right: 0;
-  background: url(../../images/icon-error.svg) no-repeat center;
+  background: no-repeat center;
 }
 
 div.container main div.form-container form div.input span.show-error-message {
