@@ -1,8 +1,8 @@
 # Frontend Mentor - Intro component with sign up form solution
 
-## [Live Site](https://your-live-site-url.com)
+## [Live Site](https://firstsignupform.netlify.app/)
 
-![Preview](design/desktop-preview.jpg)
+![Preview](design/desktop.png)
 
 This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1).
 
@@ -17,7 +17,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
 
 
@@ -35,12 +34,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+[Desktop](design/desktop.png)
+
+[Mobile](design/mobile.png)
+
+
 
 
 ### Links
 
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://firstsignupform.netlify.app/)
 
 ## My process
 
@@ -50,32 +53,10 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - SASS
-- Flexbox
 - CSS Grid
 - JavaScript
-
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
+- CSS animation
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This challenge was easy to be concluded. What I liked the most was that I had the opportunity to practice JS, meanly form input validation. Also, although it was my first sign-up project, I think that I designed a project that can be used in real life. Therefore, I am satisfied with what I have achieved by studying JS for 2 months.
