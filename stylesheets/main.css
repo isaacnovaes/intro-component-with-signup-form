@@ -239,8 +239,17 @@ div.container main div.form-container form div.input input {
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
   border: 2px solid rgba(128, 128, 128, 0.281);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+div.container main div.form-container form div.input input:focus {
+  border: 2px solid #6751f5;
+  outline: none;
+}
+
+div.container main div.form-container form div.input input:focus:not(:focus-visible) {
+  outline: none;
 }
 
 div.container main div.form-container form input[type="submit"] {
